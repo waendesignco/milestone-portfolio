@@ -1,80 +1,82 @@
 /****** BASE STYLES ******/
 body {
   font-family: 'Montserrat', sans-serif;
-  font-size: 24px ;
+  font-size: 1.5em;
   font-weight: normal;
   color: #2E382EFF;
 }
 
 /****** GRID ******/
 .full-width {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   overflow: auto;
 }
 
 .half-width {
-  width: 600px;
+  width: 50%;
   float: left;
 }
 .third-width {
-  width: 400px;
+  width: 33%;
   float: left;
 }
 
 /****** HEADER ******/
 header {
-  height: 800px;
+  height: 30em;
   background: url('../img/hero-img.png');
   background-size: cover;
   background-position: center;
+  overflow: auto;
 }
 
 header h3 {
-  width: 230px;
-  margin: 70px 120px;
-  padding: 2px;
+  width: 9em;
+  margin: 1.7em 0.5em;
+  padding: 0.2em;
   background: white;
   border: 1px solid #FFFFFF;
-  font-size: 25px;
+  font-size: 1.5em;
   color: #9883E5FF;
   text-align: center;
 }
 
 nav {
   float: right;
-  padding: 50px 0;
+  padding: 2em 1em;
 }
 
-nav ul li {
-  display: inline-block;
+nav ul {
+  display: flex;
+  justify-content: flex-start;
 }
+
 nav ul li a {
   background: white;
-  border: 2px solid #9883E5FF;
-  font-size: 16px;
+  border: 0.1em solid #9883E5FF;
+  font-size: 0.7em;
   color: #9883E5FF;
   text-align: center;
   text-transform: uppercase;
-  padding: 5px 10px;
+  padding: 0.3em 0.3em;
 }
 
 header h2 {
-  width: 1000px;
+  width: 85%;
   clear: both;
   font-family: 'Merriweather', serif;
-  font-size: 40px;
+  font-size: 1.5em;
   font-weight: 600;
-  line-height: 70px;
+  line-height: 1.2em;
   color: #72A1E5FF;
-  padding: 80px 0;
+  padding: 1.5em 0;
   margin: auto;
   text-align: center;
 }
 
 header h2 span {
-  font-size: 50px;
-  font-weight: 700;
+  font-size: 1em;
   color: #50C9CEFF;
 }
 
@@ -84,41 +86,41 @@ header h2 span {
 }
 
 .port-title {
-	padding: 20px 0;
+	padding: 0.5em 0;
 	font-family:'Merriweather', serif;
-	font-size: 28px;
+	font-size: 1.25em;
 	font-weight: bold;
 	color: #9883E5FF;
   text-align:center;
 }
 
 .pf {
-	margin: 5px 0;
+	margin: 0.5em 0;
   overflow: auto;
 }
 
 .image {
-  padding-left: 30px;
+  padding-left: 2em;
 	float: left;
 }
 
 .container {
 	float: left;
-	padding: 10px 0 0 70px;
-	width: 600px;
-	height: 400px;
+	padding: 0.7em 0 0 4em;
+	width: 50%;
+	height: auto;
   box-sizing: border-box;
   text-align: left;
   display: inline-block;
 }
 
 h3 {
-  border-bottom: 5px dotted #9883E5FF;
+  border-bottom: 0.3em dotted #9883E5FF;
 }
 
 /****** ABOUT ******/
 #about {
-  height: 750px;
+  height: auto;
   background: hsla(30, 82%, 91%, 1);
   background: radial-gradient(circle, hsla(30, 82%, 91%, 1) 0%, hsla(344, 87%, 91%, 1) 100%);
   background: -moz-radial-gradient(circle, hsla(30, 82%, 91%, 1) 0%, hsla(344, 87%, 91%, 1) 100%);
@@ -126,27 +128,28 @@ h3 {
 }
 
 .title h2 {
-  padding: 20px 0;
+  padding: 0.5em 0;
   font-family:'Merriweather', serif;
-  font-size: 40px;
+  font-size: 1.5em;
   font-weight: bold;
   color: #FFFFFF;
   text-align:center;
 }
 
 .about-img {
-  border: 10px double #FFFFFF;
-  margin-left: 100px;
+  border: 0.6em double #FFFFFF;
+  display: flex;
+  margin: 0 0 3em 5em;
 }
 
 .about-container {
-  display: inline-block;
-  padding: 30px 15px;
-  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0 1em;
 }
 
 p {
-  font-size: 18px;
+  font-size: 0.8em;
   font-weight: lighter;
 }
 
@@ -156,16 +159,17 @@ h3  {
 
 /****** CONTACT ******/
 #contact {
-  height: 400px;
+  height: auto;
   background: hsla(182, 56%, 56%, 1);
   background: linear-gradient(180deg, hsla(182, 56%, 56%, 1) 0%, hsla(344, 87%, 91%, 1) 50%, hsla(215, 69%, 67%, 1) 100%);
   background: -moz-linear-gradient(180deg, hsla(182, 56%, 56%, 1) 0%, hsla(344, 87%, 91%, 1) 50%, hsla(215, 69%, 67%, 1) 100%);
   background: -webkit-linear-gradient(180deg, hsla(182, 56%, 56%, 1) 0%, hsla(344, 87%, 91%, 1) 50%, hsla(215, 69%, 67%, 1) 100%);
-  margin: 10px;
+  margin: 0.3em;
 }
 
 #contact .title {
   color: #FFFFFF;
+  margin: auto;
 }
 
 h4 {
@@ -175,33 +179,36 @@ h4 {
 }
 
 #envelope {
-  padding-left: 40px;
-  padding-right: 20px;
+  padding-left: 2em;
+  padding-right: 0.5em;
 }
 
 #contact a {
   text-align: center;
   color: #FFFFFF;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 0.7em;
+  padding-bottom: 0.5em;
 }
 
 ul {
   list-style: none;
 }
 
-ul li {
-  display: inline-block;
+ul#socialmedia {
+  display: flex;
+  flex-flow: row nowrap;
+  padding-left: 2em;
 }
 
 ul img {
   margin: 0 auto;
-  padding-left: 50px;
+  padding-left: 3.3em;
 }
 
 footer {
   text-align: center;
-  font-size: 20px;
+  font-size: 0.5em;
 }
 
 /****** Japanese page ******/
@@ -215,7 +222,7 @@ footer {
 
 /****** WORK PAGE add later******/
 .temp h2 {
-  padding-top: 350px;
+  padding-top: 20em;
   }
 
 /****** PORTFOLIO PAGE add later******/
