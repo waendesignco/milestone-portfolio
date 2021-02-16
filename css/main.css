@@ -3,7 +3,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5em;
   font-weight: normal;
-  color: #2E382EFF;
+  color: #262630;
 }
 
 /****** GRID ******/
@@ -37,26 +37,31 @@ header h3 {
   padding: 0.2em;
   background: white;
   border: 1px solid #FFFFFF;
-  font-size: 1.5em;
-  color: #9883E5FF;
+  font-size: 1.25em;
+  color: #9883E5;
   text-align: center;
 }
 
 nav {
   float: right;
-  padding: 2em 1em;
+  padding: 2.5em 1em;
 }
 
 nav ul {
   display: flex;
   justify-content: flex-start;
+  margin: 0 1em;
+}
+
+nav ul li {
+  margin: 0 0.2em;
 }
 
 nav ul li a {
   background: white;
-  border: 0.1em solid #9883E5FF;
+  border: 0.1em solid #9883E5;
   font-size: 0.7em;
-  color: #9883E5FF;
+  color: #9883E5;
   text-align: center;
   text-transform: uppercase;
   padding: 0.3em 0.3em;
@@ -70,7 +75,7 @@ header h2 {
   font-weight: 600;
   line-height: 1.2em;
   color: #72A1E5FF;
-  padding: 1.5em 0;
+  padding: 3em 0;
   margin: auto;
   text-align: center;
 }
@@ -88,7 +93,7 @@ header h2 span {
 .port-title {
 	padding: 0.5em 0;
 	font-family:'Merriweather', serif;
-	font-size: 1.25em;
+	font-size: 1em;
 	font-weight: bold;
 	color: #9883E5FF;
   text-align:center;
@@ -145,7 +150,7 @@ h3 {
 .about-container {
   display: flex;
   flex-flow: row wrap;
-  padding: 0 1em;
+  padding: 0 1.5em;
 }
 
 p {
@@ -158,24 +163,30 @@ h3  {
 }
 
 /****** CONTACT ******/
+.contact-title h2{
+  font-family:'Merriweather', serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #262630;
+  text-align:center;
+}
+
 #contact {
   height: auto;
-  background: hsla(182, 56%, 56%, 1);
-  background: linear-gradient(180deg, hsla(182, 56%, 56%, 1) 0%, hsla(344, 87%, 91%, 1) 50%, hsla(215, 69%, 67%, 1) 100%);
-  background: -moz-linear-gradient(180deg, hsla(182, 56%, 56%, 1) 0%, hsla(344, 87%, 91%, 1) 50%, hsla(215, 69%, 67%, 1) 100%);
-  background: -webkit-linear-gradient(180deg, hsla(182, 56%, 56%, 1) 0%, hsla(344, 87%, 91%, 1) 50%, hsla(215, 69%, 67%, 1) 100%);
+  background: url('../img/footer-background.png');
   margin: 0.3em;
 }
 
 #contact .title {
-  color: #FFFFFF;
+  text-align:center;
   margin: auto;
 }
 
 h4 {
   text-align: center;
-  color: #FFFFFF;
+  color: #262630;
   font-family:'Merriweather', serif;
+  font-size: 0.8em;
 }
 
 #envelope {
@@ -185,7 +196,7 @@ h4 {
 
 #contact a {
   text-align: center;
-  color: #FFFFFF;
+  color: #262630;
   font-weight: bold;
   font-size: 0.7em;
   padding-bottom: 0.5em;
@@ -198,7 +209,7 @@ ul {
 ul#socialmedia {
   display: flex;
   flex-flow: row nowrap;
-  padding-left: 2em;
+  text-align: : center;
 }
 
 ul img {
@@ -222,7 +233,7 @@ footer {
 
 /****** WORK PAGE add later******/
 .temp h2 {
-  padding-top: 20em;
+  padding-top: 10em;
   }
 
 /****** PORTFOLIO PAGE add later******/
